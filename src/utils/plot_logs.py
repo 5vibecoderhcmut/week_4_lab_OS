@@ -17,7 +17,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import math
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -161,7 +160,13 @@ def svg_text(x: float, y: float, text: str, size: int = 13, anchor: str = "middl
 def nice_max(value: float) -> float:
     if value <= 0:
         return 1.0
-    magnitude = 10 ** math.floor(math.log10(value))
+
+    magnitude = 1.0
+    while value >= magnitude * 10.0:
+        magnitude *= 10.0
+    while value < magnitude:
+        magnitude /= 10.0
+
     normalized = value / magnitude
     if normalized <= 1:
         nice = 1
