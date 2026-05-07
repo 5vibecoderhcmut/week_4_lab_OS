@@ -1,4 +1,4 @@
-workload,source_file,job_count,total_runtime,avg_runtime,min_runtime,max_runtime,first_arrival,last_arrival,arrival_span,avg_priority,priority_1,priority_2,priority_3,priority_5,type_compress,type_metadata_update,type_policy_check,type_resize,type_thumbnail
-a,workloads\workload_a.csv,50,220,4.40,3,6,0,49,49,1.98,17,17,16,0,10,10,10,10,10
-b,workloads\workload_b.csv,50,559,11.18,1,50,0,11,11,1.48,29,18,3,0,4,14,15,2,15
-c,workloads\workload_c.csv,50,137,2.74,2,6,0,45,45,1.70,30,15,0,5,2,1,23,2,22
+workload,source_file,job_count,total_runtime,avg_runtime,min_runtime,max_runtime,first_arrival,last_arrival,arrival_span,avg_priority,priority_1,priority_2,priority_3,type_compress,type_metadata_update,type_policy_check,type_resize,type_thumbnail
+a,workloads\workload_a.csv,19,92,4.84,4,6,1,19,18,1.95,7,6,6,4,4,4,3,4
+b,workloads\workload_b.csv,19,76,4.00,1,15,0,3,3,1.95,6,8,5,3,0,5,5,6
+c,workloads\workload_c.csv,19,86,4.53,4,6,0,15,15,1.53,14,0,5,0,5,14,0,0

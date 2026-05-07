@@ -1,5 +1,4 @@
 job_id,seller_id,arrival_time,estimated_runtime,priority,job_type
-1,A,0,4,2,resize
 2,B,1,5,1,thumbnail
 3,C,2,4,3,compress
 4,D,3,6,2,policy_check

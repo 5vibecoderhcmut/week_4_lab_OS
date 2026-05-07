@@ -24,32 +24,32 @@
 <text x="515.0" y="504.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">4</text>
 <line x1="948.0" y1="478" x2="948.0" y2="484" stroke="#374151"/>
 <text x="948.0" y="504.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">8</text>
-<polyline points="82.0,214.0 515.0,467.2 948.0,478.0" fill="none" stroke="#2563eb" stroke-width="3"/>
+<polyline points="82.0,214.0 515.0,415.8 948.0,478.0" fill="none" stroke="#2563eb" stroke-width="3"/>
 <circle cx="82.0" cy="214.0" r="5" fill="#2563eb"/>
 <text x="82.0" y="204.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">13.2</text>
-<circle cx="515.0" cy="467.2" r="5" fill="#2563eb"/>
-<text x="515.0" y="457.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.54</text>
+<circle cx="515.0" cy="415.8" r="5" fill="#2563eb"/>
+<text x="515.0" y="405.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">3.11</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#2563eb"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<polyline points="82.0,262.0 515.0,469.6 948.0,478.0" fill="none" stroke="#16a34a" stroke-width="3"/>
+<polyline points="82.0,262.0 515.0,420.2 948.0,478.0" fill="none" stroke="#16a34a" stroke-width="3"/>
 <circle cx="82.0" cy="262.0" r="5" fill="#16a34a"/>
 <text x="82.0" y="252.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">10.8</text>
-<circle cx="515.0" cy="469.6" r="5" fill="#16a34a"/>
-<text x="515.0" y="459.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.42</text>
+<circle cx="515.0" cy="420.2" r="5" fill="#16a34a"/>
+<text x="515.0" y="410.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">2.89</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#16a34a"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<polyline points="82.0,219.0 515.0,468.4 948.0,478.0" fill="none" stroke="#d97706" stroke-width="3"/>
+<polyline points="82.0,219.0 515.0,420.2 948.0,478.0" fill="none" stroke="#d97706" stroke-width="3"/>
 <circle cx="82.0" cy="219.0" r="5" fill="#d97706"/>
 <text x="82.0" y="209.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">12.95</text>
-<circle cx="515.0" cy="468.4" r="5" fill="#d97706"/>
-<text x="515.0" y="458.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.48</text>
+<circle cx="515.0" cy="420.2" r="5" fill="#d97706"/>
+<text x="515.0" y="410.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">2.89</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#d97706"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<polyline points="82.0,218.0 515.0,468.4 948.0,478.0" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<polyline points="82.0,218.0 515.0,418.0 948.0,478.0" fill="none" stroke="#7c3aed" stroke-width="3"/>
 <circle cx="82.0" cy="218.0" r="5" fill="#7c3aed"/>
 <text x="82.0" y="208.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">13</text>
-<circle cx="515.0" cy="468.4" r="5" fill="#7c3aed"/>
-<text x="515.0" y="458.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.48</text>
+<circle cx="515.0" cy="418.0" r="5" fill="#7c3aed"/>
+<text x="515.0" y="408.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">3</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#7c3aed"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
 <rect x="82" y="502" width="12" height="12" fill="#2563eb" rx="2"/>

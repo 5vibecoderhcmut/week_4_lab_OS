@@ -5,27 +5,27 @@
 <line x1="82" y1="468.0" x2="948" y2="468.0" stroke="#e5e7eb"/>
 <text x="70.0" y="472.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">0.0</text>
 <line x1="82" y1="390.0" x2="948" y2="390.0" stroke="#e5e7eb"/>
-<text x="70.0" y="394.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">200.0</text>
+<text x="70.0" y="394.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">40.0</text>
 <line x1="82" y1="312.0" x2="948" y2="312.0" stroke="#e5e7eb"/>
-<text x="70.0" y="316.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">400.0</text>
+<text x="70.0" y="316.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">80.0</text>
 <line x1="82" y1="234.0" x2="948" y2="234.0" stroke="#e5e7eb"/>
-<text x="70.0" y="238.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">600.0</text>
+<text x="70.0" y="238.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">120.0</text>
 <line x1="82" y1="156.0" x2="948" y2="156.0" stroke="#e5e7eb"/>
-<text x="70.0" y="160.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">800.0</text>
+<text x="70.0" y="160.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">160.0</text>
 <line x1="82" y1="78.0" x2="948" y2="78.0" stroke="#e5e7eb"/>
-<text x="70.0" y="82.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">1000.0</text>
+<text x="70.0" y="82.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">200.0</text>
 <line x1="82" y1="78" x2="82" y2="468" stroke="#374151"/>
 <line x1="82" y1="468" x2="948" y2="468" stroke="#374151"/>
 <text x="24.0" y="273.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Runtime units</text>
 <text x="226.3" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
-<rect x="119.5" y="382.2" width="213.6" height="85.8" fill="#0f766e" rx="3"/>
-<text x="226.3" y="376.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">220</text>
+<rect x="119.5" y="288.6" width="213.6" height="179.4" fill="#0f766e" rx="3"/>
+<text x="226.3" y="282.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">92</text>
 <text x="515.0" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
-<rect x="408.2" y="250.0" width="213.6" height="218.0" fill="#0f766e" rx="3"/>
-<text x="515.0" y="244.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">559</text>
+<rect x="408.2" y="319.8" width="213.6" height="148.2" fill="#0f766e" rx="3"/>
+<text x="515.0" y="313.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">76</text>
 <text x="803.7" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload C</text>
-<rect x="696.9" y="414.6" width="213.6" height="53.4" fill="#0f766e" rx="3"/>
-<text x="803.7" y="408.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">137</text>
+<rect x="696.9" y="300.3" width="213.6" height="167.7" fill="#0f766e" rx="3"/>
+<text x="803.7" y="294.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">86</text>
 <rect x="82" y="532" width="12" height="12" fill="#0f766e" rx="2"/>
 <text x="100.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Total runtime</text>
 </svg>
