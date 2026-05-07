@@ -99,6 +99,13 @@ The project workflow diagrams are documented in:
 docs/project_workflow.md
 ```
 
+Additional report-support documentation:
+
+```text
+docs/system_design.md
+docs/experient_setup.md
+```
+
 ## Metrics
 
 The summary reports:
