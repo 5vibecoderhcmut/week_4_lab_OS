@@ -4,7 +4,7 @@ project/
 ├── global.c                 // Định nghĩa biến global dùng chung
 ├── main.c                   // Hàm main, nối tất cả phần lại
 ├── input_reader.c           // Đọc file CSV vào mảng jobs
-├── worker.c                 // Student 2: worker pool + synchronization
+├── worker.c                 // Worker pool + synchronization
 ├── scheduler_policy.c       // FIFO, SJF, Priority
 ├── metrics.c                // Tính waiting time, turnaround, throughput...
 │
