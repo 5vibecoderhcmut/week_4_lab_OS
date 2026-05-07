@@ -81,6 +81,24 @@ The 2/4/8-worker benchmark table is written to:
 results/summary.csv
 ```
 
+Generate SVG charts from logs:
+
+```bash
+python3 src/utils/plot_logs.py --logs logs --out results/charts
+```
+
+The generated chart index is:
+
+```text
+results/charts/index.html
+```
+
+The project workflow diagrams are documented in:
+
+```text
+docs/project_workflow.md
+```
+
 ## Metrics
 
 The summary reports:

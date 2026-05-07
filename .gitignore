@@ -2,6 +2,8 @@
 *.d
 .DS_Store
 scheduler
+__pycache__/
+*.pyc
 
 # Object files
 *.o
