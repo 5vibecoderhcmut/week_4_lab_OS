@@ -41,7 +41,7 @@ CSV workload -> parser -> job array -> arrival simulation -> ready queue
 | `src/utils/time_utils.c` | Scaled time simulation |
 | `src/utils/logger.c` | Thread-safe worker logs |
 | `src/utils/sync.c` | Mutex and condition variable initialization |
-| `src/utils/plot_logs.py` | Generates SVG charts from log summaries |
+| `src/utils/plot_logs.py` | Generates SVG charts from log summaries and workload dataset statistics |
 
 ## 3. Core Data Structures
 

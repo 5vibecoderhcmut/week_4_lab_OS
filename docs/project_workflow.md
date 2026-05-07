@@ -59,7 +59,9 @@ flowchart LR
     Logger --> Logs["logs/*.txt"]
     Metrics --> Summary["results/*.csv"]
     Logs --> Charts["src/utils/plot_logs.py<br/>SVG charts"]
+    Workloads["workloads/*.csv"] --> Charts
     Charts --> ChartOut["results/charts/*.svg"]
+    Charts --> DatasetStats["results/dataset_stats.csv"]
 ```
 
 ## 3. Scheduling Decision Workflow
@@ -103,6 +105,7 @@ flowchart TD
     E --> K["python3 src/utils/plot_logs.py"]
     I --> K
     K --> L["Generate SVG charts in results/charts/"]
+    K --> M["Generate results/dataset_stats.csv"]
 ```
 
 ## 5. Data Flow
@@ -121,4 +124,5 @@ flowchart LR
     Metrics --> Results["results/*.csv"]
     Logs --> Plotter["plot_logs.py"]
     Plotter --> Charts["results/charts/*.svg"]
+    Plotter --> DatasetStats["results/dataset_stats.csv"]
 ```

@@ -1,0 +1,4 @@
+workload,source_file,job_count,total_runtime,avg_runtime,min_runtime,max_runtime,first_arrival,last_arrival,arrival_span,avg_priority,priority_1,priority_2,priority_3,type_compress,type_metadata_update,type_policy_check,type_resize,type_thumbnail
+a,workloads/workload_a.csv,20,113,5.65,4,7,0,10,10,2.20,4,8,8,1,6,5,3,5
+b,workloads/workload_b.csv,20,62,3.10,1,19,0,6,6,2.00,8,4,8,3,6,4,5,2
+c,workloads/workload_c.csv,20,96,4.80,3,7,1,20,19,2.00,10,0,10,3,7,2,2,6

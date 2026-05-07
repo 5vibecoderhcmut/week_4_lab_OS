@@ -16,6 +16,7 @@ without external Python dependencies.
 from __future__ import annotations
 
 import argparse
+import csv
 import html
 import re
 from dataclasses import dataclass
@@ -40,6 +41,16 @@ WORKLOAD_LABELS = {
     "b": "Workload B",
     "c": "Workload C",
 }
+DATASET_COLORS = [
+    "#2563eb",
+    "#16a34a",
+    "#d97706",
+    "#7c3aed",
+    "#0f766e",
+    "#dc2626",
+    "#0891b2",
+    "#4b5563",
+]
 
 
 @dataclass(frozen=True)
@@ -57,10 +68,33 @@ class LogMetrics:
     log_file: Path
 
 
+@dataclass(frozen=True)
+class WorkloadStats:
+    workload: str
+    job_count: int
+    total_runtime: int
+    avg_runtime: float
+    min_runtime: int
+    max_runtime: int
+    first_arrival: int
+    last_arrival: int
+    arrival_span: int
+    avg_priority: float
+    priority_counts: dict[int, int]
+    job_type_counts: dict[str, int]
+    source_file: Path
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate SVG charts from scheduler logs.")
     parser.add_argument("--logs", default="logs", help="Directory containing scheduler .txt logs")
+    parser.add_argument("--workloads", default="workloads", help="Directory containing workload CSV files")
     parser.add_argument("--out", default="results/charts", help="Output directory for SVG charts")
+    parser.add_argument(
+        "--dataset-summary",
+        default=None,
+        help="Output CSV for workload dataset statistics. Defaults to <chart output parent>/dataset_stats.csv",
+    )
     parser.add_argument("--workers", type=int, default=4, help="Worker count for policy comparison charts")
     return parser.parse_args()
 
@@ -147,6 +181,109 @@ def load_metrics(log_dir: Path) -> list[LogMetrics]:
         if parsed is not None:
             rows.append(parsed)
     return rows
+
+
+def workload_name_from_path(path: Path) -> str | None:
+    match = re.match(r"workload_([abc])\.csv$", path.name)
+    if match is None:
+        return None
+    return match.group(1).lower()
+
+
+def load_workload_stats(workload_dir: Path) -> list[WorkloadStats]:
+    stats: list[WorkloadStats] = []
+
+    for path in sorted(workload_dir.glob("workload_*.csv")):
+        workload = workload_name_from_path(path)
+        if workload is None:
+            continue
+
+        runtimes: list[int] = []
+        arrivals: list[int] = []
+        priorities: list[int] = []
+        priority_counts: dict[int, int] = {}
+        job_type_counts: dict[str, int] = {}
+
+        with path.open("r", encoding="utf-8", newline="") as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                runtime = int(row["estimated_runtime"])
+                arrival = int(row["arrival_time"])
+                priority = int(row["priority"])
+                job_type = row["job_type"].strip()
+
+                runtimes.append(runtime)
+                arrivals.append(arrival)
+                priorities.append(priority)
+                priority_counts[priority] = priority_counts.get(priority, 0) + 1
+                job_type_counts[job_type] = job_type_counts.get(job_type, 0) + 1
+
+        if not runtimes:
+            continue
+
+        stats.append(
+            WorkloadStats(
+                workload=workload,
+                job_count=len(runtimes),
+                total_runtime=sum(runtimes),
+                avg_runtime=sum(runtimes) / len(runtimes),
+                min_runtime=min(runtimes),
+                max_runtime=max(runtimes),
+                first_arrival=min(arrivals),
+                last_arrival=max(arrivals),
+                arrival_span=max(arrivals) - min(arrivals),
+                avg_priority=sum(priorities) / len(priorities),
+                priority_counts=priority_counts,
+                job_type_counts=job_type_counts,
+                source_file=path,
+            )
+        )
+
+    return stats
+
+
+def write_dataset_stats_csv(stats: list[WorkloadStats], out_file: Path) -> None:
+    priorities = sorted({priority for row in stats for priority in row.priority_counts})
+    job_types = sorted({job_type for row in stats for job_type in row.job_type_counts})
+    fields = [
+        "workload",
+        "source_file",
+        "job_count",
+        "total_runtime",
+        "avg_runtime",
+        "min_runtime",
+        "max_runtime",
+        "first_arrival",
+        "last_arrival",
+        "arrival_span",
+        "avg_priority",
+    ]
+    fields += [f"priority_{priority}" for priority in priorities]
+    fields += [f"type_{job_type}" for job_type in job_types]
+
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    with out_file.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fields)
+        writer.writeheader()
+        for row in sorted(stats, key=lambda item: item.workload):
+            data: dict[str, str | int] = {
+                "workload": row.workload,
+                "source_file": str(row.source_file),
+                "job_count": row.job_count,
+                "total_runtime": row.total_runtime,
+                "avg_runtime": f"{row.avg_runtime:.2f}",
+                "min_runtime": row.min_runtime,
+                "max_runtime": row.max_runtime,
+                "first_arrival": row.first_arrival,
+                "last_arrival": row.last_arrival,
+                "arrival_span": row.arrival_span,
+                "avg_priority": f"{row.avg_priority:.2f}",
+            }
+            for priority in priorities:
+                data[f"priority_{priority}"] = row.priority_counts.get(priority, 0)
+            for job_type in job_types:
+                data[f"type_{job_type}"] = row.job_type_counts.get(job_type, 0)
+            writer.writerow(data)
 
 
 def svg_text(x: float, y: float, text: str, size: int = 13, anchor: str = "middle", weight: str = "400") -> str:
@@ -259,6 +396,159 @@ def grouped_bar_chart(
     out_file.write_text("\n".join(parts) + "\n", encoding="utf-8")
 
 
+def generic_grouped_bar_chart(
+    categories: list[str],
+    series: list[tuple[str, str, list[float]]],
+    title: str,
+    subtitle: str,
+    y_label: str,
+    out_file: Path,
+    value_suffix: str = "",
+) -> None:
+    width = 980
+    height = 560
+    margin_left = 82
+    margin_right = 32
+    margin_top = 78
+    margin_bottom = 92
+    plot_width = width - margin_left - margin_right
+    plot_height = height - margin_top - margin_bottom
+    values = [value for _, _, series_values in series for value in series_values]
+    max_value = nice_max(max(values) * 1.12 if values else 1)
+    group_width = plot_width / max(len(categories), 1)
+    inner_width = group_width * 0.74
+    bar_gap = 8
+    bar_width = (inner_width - bar_gap * (len(series) - 1)) / max(len(series), 1)
+
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+        '<rect width="100%" height="100%" fill="#ffffff"/>',
+        svg_text(width / 2, 34, title, size=22, weight="700"),
+        svg_text(width / 2, 58, subtitle, size=12),
+    ]
+
+    for i in range(6):
+        value = max_value * i / 5
+        y = margin_top + plot_height - (value / max_value) * plot_height
+        parts.append(f'<line x1="{margin_left}" y1="{y:.1f}" x2="{width - margin_right}" y2="{y:.1f}" stroke="#e5e7eb"/>')
+        parts.append(svg_text(margin_left - 12, y + 4, f"{value:.1f}", size=11, anchor="end"))
+
+    parts.append(f'<line x1="{margin_left}" y1="{margin_top}" x2="{margin_left}" y2="{margin_top + plot_height}" stroke="#374151"/>')
+    parts.append(f'<line x1="{margin_left}" y1="{margin_top + plot_height}" x2="{width - margin_right}" y2="{margin_top + plot_height}" stroke="#374151"/>')
+    parts.append(svg_text(24, margin_top + plot_height / 2, y_label, size=12, anchor="middle"))
+
+    for category_index, category in enumerate(categories):
+        group_x = margin_left + category_index * group_width
+        start_x = group_x + (group_width - inner_width) / 2
+        label_x = group_x + group_width / 2
+        parts.append(svg_text(label_x, height - 42, category, size=13, weight="700"))
+
+        for series_index, (label, color, series_values) in enumerate(series):
+            value = series_values[category_index]
+            bar_height = (value / max_value) * plot_height if max_value else 0
+            x = start_x + series_index * (bar_width + bar_gap)
+            y = margin_top + plot_height - bar_height
+            parts.append(
+                f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_width:.1f}" height="{bar_height:.1f}" '
+                f'fill="{color}" rx="3"/>'
+            )
+            parts.append(svg_text(x + bar_width / 2, y - 6, f"{value:g}{value_suffix}", size=10))
+
+    legend_x = margin_left
+    legend_y = height - 18
+    for label, color, _ in series:
+        parts.append(f'<rect x="{legend_x}" y="{legend_y - 10}" width="12" height="12" fill="{color}" rx="2"/>')
+        parts.append(svg_text(legend_x + 18, legend_y, label, size=12, anchor="start"))
+        legend_x += max(94, len(label) * 8 + 34)
+
+    parts.append("</svg>")
+    out_file.write_text("\n".join(parts) + "\n", encoding="utf-8")
+
+
+def generate_dataset_charts(stats: list[WorkloadStats], out_dir: Path) -> list[Path]:
+    ordered = sorted(stats, key=lambda item: item.workload)
+    categories = [WORKLOAD_LABELS.get(row.workload, row.workload.upper()) for row in ordered]
+    chart_files: list[Path] = []
+
+    runtime_chart = out_dir / "dataset_runtime_profile.svg"
+    generic_grouped_bar_chart(
+        categories,
+        [
+            ("Min runtime", DATASET_COLORS[0], [float(row.min_runtime) for row in ordered]),
+            ("Avg runtime", DATASET_COLORS[1], [row.avg_runtime for row in ordered]),
+            ("Max runtime", DATASET_COLORS[2], [float(row.max_runtime) for row in ordered]),
+        ],
+        "Dataset Runtime Profile",
+        "Generated from workloads/workload_a.csv, workload_b.csv, workload_c.csv",
+        "Runtime units",
+        runtime_chart,
+    )
+    chart_files.append(runtime_chart)
+
+    size_chart = out_dir / "dataset_size_arrival.svg"
+    generic_grouped_bar_chart(
+        categories,
+        [
+            ("Job count", DATASET_COLORS[0], [float(row.job_count) for row in ordered]),
+            ("Arrival span", DATASET_COLORS[3], [float(row.arrival_span) for row in ordered]),
+        ],
+        "Dataset Size and Arrival Span",
+        "Job count and simulated arrival-time range",
+        "Count / time units",
+        size_chart,
+    )
+    chart_files.append(size_chart)
+
+    total_runtime_chart = out_dir / "dataset_total_runtime.svg"
+    generic_grouped_bar_chart(
+        categories,
+        [
+            ("Total runtime", DATASET_COLORS[4], [float(row.total_runtime) for row in ordered]),
+        ],
+        "Dataset Total Runtime",
+        "Sum of estimated_runtime for each workload",
+        "Runtime units",
+        total_runtime_chart,
+    )
+    chart_files.append(total_runtime_chart)
+
+    priorities = sorted({priority for row in ordered for priority in row.priority_counts})
+    priority_chart = out_dir / "dataset_priority_distribution.svg"
+    generic_grouped_bar_chart(
+        categories,
+        [
+            (f"Priority {priority}", DATASET_COLORS[index % len(DATASET_COLORS)], [float(row.priority_counts.get(priority, 0)) for row in ordered])
+            for index, priority in enumerate(priorities)
+        ],
+        "Dataset Priority Distribution",
+        "Smaller priority number means higher priority",
+        "Jobs",
+        priority_chart,
+    )
+    chart_files.append(priority_chart)
+
+    job_types = sorted({job_type for row in ordered for job_type in row.job_type_counts})
+    job_type_chart = out_dir / "dataset_job_type_distribution.svg"
+    generic_grouped_bar_chart(
+        categories,
+        [
+            (
+                job_type.replace("_", " ").title(),
+                DATASET_COLORS[index % len(DATASET_COLORS)],
+                [float(row.job_type_counts.get(job_type, 0)) for row in ordered],
+            )
+            for index, job_type in enumerate(job_types)
+        ],
+        "Dataset Job Type Distribution",
+        "Count of image-processing job types in each workload",
+        "Jobs",
+        job_type_chart,
+    )
+    chart_files.append(job_type_chart)
+
+    return chart_files
+
+
 def scaling_line_chart(rows: list[LogMetrics], workload: str, out_file: Path) -> None:
     width = 980
     height = 560
@@ -363,6 +653,7 @@ def write_index(out_dir: Path, chart_files: list[Path]) -> None:
 def main() -> int:
     args = parse_args()
     log_dir = Path(args.logs)
+    workload_dir = Path(args.workloads)
     out_dir = Path(args.out)
 
     if not log_dir.exists():
@@ -432,9 +723,18 @@ def main() -> int:
         scaling_line_chart(rows, workload, chart_file)
         chart_files.append(chart_file)
 
+    workload_stats = load_workload_stats(workload_dir) if workload_dir.exists() else []
+    dataset_stats_file = Path(args.dataset_summary) if args.dataset_summary else out_dir.parent / "dataset_stats.csv"
+    if workload_stats:
+        write_dataset_stats_csv(workload_stats, dataset_stats_file)
+        chart_files.extend(generate_dataset_charts(workload_stats, out_dir))
+
     write_index(out_dir, chart_files)
 
     print(f"Parsed {len(rows)} log files")
+    if workload_stats:
+        print(f"Parsed {len(workload_stats)} workload datasets")
+        print(f"Dataset stats written to {dataset_stats_file}")
     print(f"Charts written to {out_dir}")
     for chart_file in chart_files:
         print(f"- {chart_file}")

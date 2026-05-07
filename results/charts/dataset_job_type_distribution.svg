@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="34.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#111827">Dataset Job Type Distribution</text>
+<text x="490.0" y="58.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Count of image-processing job types in each workload</text>
+<line x1="82" y1="468.0" x2="948" y2="468.0" stroke="#e5e7eb"/>
+<text x="70.0" y="472.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">0.0</text>
+<line x1="82" y1="390.0" x2="948" y2="390.0" stroke="#e5e7eb"/>
+<text x="70.0" y="394.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">2.0</text>
+<line x1="82" y1="312.0" x2="948" y2="312.0" stroke="#e5e7eb"/>
+<text x="70.0" y="316.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">4.0</text>
+<line x1="82" y1="234.0" x2="948" y2="234.0" stroke="#e5e7eb"/>
+<text x="70.0" y="238.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">6.0</text>
+<line x1="82" y1="156.0" x2="948" y2="156.0" stroke="#e5e7eb"/>
+<text x="70.0" y="160.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">8.0</text>
+<line x1="82" y1="78.0" x2="948" y2="78.0" stroke="#e5e7eb"/>
+<text x="70.0" y="82.0" font-family="Arial, sans-serif" font-size="11" font-weight="400" text-anchor="end" fill="#111827">10.0</text>
+<line x1="82" y1="78" x2="82" y2="468" stroke="#374151"/>
+<line x1="82" y1="468" x2="948" y2="468" stroke="#374151"/>
+<text x="24.0" y="273.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Jobs</text>
+<text x="226.3" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
+<rect x="119.5" y="429.0" width="36.3" height="39.0" fill="#2563eb" rx="3"/>
+<text x="137.7" y="423.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1</text>
+<rect x="163.8" y="234.0" width="36.3" height="234.0" fill="#16a34a" rx="3"/>
+<text x="182.0" y="228.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">6</text>
+<rect x="208.2" y="273.0" width="36.3" height="195.0" fill="#d97706" rx="3"/>
+<text x="226.3" y="267.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">5</text>
+<rect x="252.5" y="351.0" width="36.3" height="117.0" fill="#7c3aed" rx="3"/>
+<text x="270.7" y="345.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">3</text>
+<rect x="296.8" y="273.0" width="36.3" height="195.0" fill="#0f766e" rx="3"/>
+<text x="315.0" y="267.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">5</text>
+<text x="515.0" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
+<rect x="408.2" y="351.0" width="36.3" height="117.0" fill="#2563eb" rx="3"/>
+<text x="426.4" y="345.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">3</text>
+<rect x="452.5" y="234.0" width="36.3" height="234.0" fill="#16a34a" rx="3"/>
+<text x="470.7" y="228.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">6</text>
+<rect x="496.8" y="312.0" width="36.3" height="156.0" fill="#d97706" rx="3"/>
+<text x="515.0" y="306.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">4</text>
+<rect x="541.2" y="273.0" width="36.3" height="195.0" fill="#7c3aed" rx="3"/>
+<text x="559.3" y="267.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">5</text>
+<rect x="585.5" y="390.0" width="36.3" height="78.0" fill="#0f766e" rx="3"/>
+<text x="603.6" y="384.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">2</text>
+<text x="803.7" y="518.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload C</text>
+<rect x="696.9" y="351.0" width="36.3" height="117.0" fill="#2563eb" rx="3"/>
+<text x="715.0" y="345.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">3</text>
+<rect x="741.2" y="195.0" width="36.3" height="273.0" fill="#16a34a" rx="3"/>
+<text x="759.3" y="189.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7</text>
+<rect x="785.5" y="390.0" width="36.3" height="78.0" fill="#d97706" rx="3"/>
+<text x="803.7" y="384.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">2</text>
+<rect x="829.8" y="390.0" width="36.3" height="78.0" fill="#7c3aed" rx="3"/>
+<text x="848.0" y="384.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">2</text>
+<rect x="874.2" y="234.0" width="36.3" height="234.0" fill="#0f766e" rx="3"/>
+<text x="892.3" y="228.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">6</text>
+<rect x="82" y="532" width="12" height="12" fill="#2563eb" rx="2"/>
+<text x="100.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Compress</text>
+<rect x="180" y="532" width="12" height="12" fill="#16a34a" rx="2"/>
+<text x="198.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Metadata Update</text>
+<rect x="334" y="532" width="12" height="12" fill="#d97706" rx="2"/>
+<text x="352.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Policy Check</text>
+<rect x="464" y="532" width="12" height="12" fill="#7c3aed" rx="2"/>
+<text x="482.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Resize</text>
+<rect x="558" y="532" width="12" height="12" fill="#0f766e" rx="2"/>
+<text x="576.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Thumbnail</text>
+</svg>

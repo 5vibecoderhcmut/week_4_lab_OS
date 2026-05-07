@@ -246,15 +246,16 @@ This benchmark is useful for the bonus discussion about whether adding more work
 
 ## 8. Chart Generation
 
-Charts are generated from logs using:
+Charts are generated from logs and workload CSV files using:
 
 ```bash
-python3 src/utils/plot_logs.py --logs logs --out results/charts
+python3 src/utils/plot_logs.py --logs logs --workloads workloads --out results/charts
 ```
 
 Generated files:
 
 ```text
+results/dataset_stats.csv
 results/charts/avg_waiting_4_workers.svg
 results/charts/avg_turnaround_4_workers.svg
 results/charts/throughput_4_workers.svg
@@ -263,10 +264,23 @@ results/charts/starvation_4_workers.svg
 results/charts/worker_scaling_a.svg
 results/charts/worker_scaling_b.svg
 results/charts/worker_scaling_c.svg
+results/charts/dataset_runtime_profile.svg
+results/charts/dataset_size_arrival.svg
+results/charts/dataset_total_runtime.svg
+results/charts/dataset_priority_distribution.svg
+results/charts/dataset_job_type_distribution.svg
 results/charts/index.html
 ```
 
 The charts use linear scale.
+
+The dataset charts summarize the workload input files before scheduling. They show:
+
+- runtime profile for workload A/B/C
+- total estimated runtime per workload
+- job count and arrival span
+- priority distribution
+- job type distribution
 
 ## 9. Metrics
 
