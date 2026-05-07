@@ -16,43 +16,6 @@ Clean build artifacts:
 make clean
 ```
 
-## Run
-
-```bash
-./scheduler <jobs.csv> <policy> <workers>
-```
-
-Examples:
-
-```bash
-./scheduler workloads/workload_a.csv fifo 4
-./scheduler workloads/workload_b.csv sjf 4
-./scheduler workloads/workload_c.csv priority 4
-```
-
-Supported policies:
-
-- `fifo` or `fcfs`: first job that entered the ready queue runs first.
-- `sjf`: non-preemptive shortest job first.
-- `priority`: non-preemptive priority scheduling, where smaller priority number means higher priority.
-- `aging`: bonus aging-priority policy to reduce starvation.
-
-## Time Simulation
-
-The program uses scaled simulation:
-
-```text
-1 simulated time unit = 100 ms
-```
-
-For example, a job with `estimated_runtime=5` sleeps for about 0.5 seconds.
-
-## Workloads
-
-- `workload_a.csv`: balanced workload, most runtimes are similar.
-- `workload_b.csv`: mixed short and long jobs, useful for observing FIFO convoy effect and SJF behavior.
-- `workload_c.csv`: priority-sensitive workload, high-priority jobs arrive later.
-
 ## Scripts
 
 Run the policy comparison experiments, including the Aging bonus policy:
@@ -111,6 +74,44 @@ Additional report-support documentation:
 docs/system_design.md
 docs/experient_setup.md
 ```
+
+## Run
+
+```bash
+./scheduler <jobs.csv> <policy> <workers>
+```
+
+Examples:
+
+```bash
+./scheduler workloads/workload_a.csv fifo 4
+./scheduler workloads/workload_b.csv sjf 4
+./scheduler workloads/workload_c.csv priority 4
+```
+
+Supported policies:
+
+- `fifo` or `fcfs`: first job that entered the ready queue runs first.
+- `sjf`: non-preemptive shortest job first.
+- `priority`: non-preemptive priority scheduling, where smaller priority number means higher priority.
+- `aging`: bonus aging-priority policy to reduce starvation.
+
+## Time Simulation
+
+The program uses scaled simulation:
+
+```text
+1 simulated time unit = 100 ms
+```
+
+For example, a job with `estimated_runtime=5` sleeps for about 0.5 seconds.
+
+## Workloads
+
+- `workload_a.csv`: balanced workload, most runtimes are similar.
+- `workload_b.csv`: mixed short and long jobs, useful for observing FIFO convoy effect and SJF behavior.
+- `workload_c.csv`: priority-sensitive workload, high-priority jobs arrive later.
+
 
 ## Metrics
 
