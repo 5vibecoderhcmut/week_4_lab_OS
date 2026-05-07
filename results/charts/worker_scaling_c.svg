@@ -31,18 +31,18 @@
 <text x="515.0" y="457.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.54</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#2563eb"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<polyline points="82.0,262.0 515.0,470.4 948.0,478.0" fill="none" stroke="#16a34a" stroke-width="3"/>
+<polyline points="82.0,262.0 515.0,469.6 948.0,478.0" fill="none" stroke="#16a34a" stroke-width="3"/>
 <circle cx="82.0" cy="262.0" r="5" fill="#16a34a"/>
 <text x="82.0" y="252.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">10.8</text>
-<circle cx="515.0" cy="470.4" r="5" fill="#16a34a"/>
-<text x="515.0" y="460.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.38</text>
+<circle cx="515.0" cy="469.6" r="5" fill="#16a34a"/>
+<text x="515.0" y="459.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.42</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#16a34a"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<polyline points="82.0,219.0 515.0,468.0 948.0,478.0" fill="none" stroke="#d97706" stroke-width="3"/>
+<polyline points="82.0,219.0 515.0,468.4 948.0,478.0" fill="none" stroke="#d97706" stroke-width="3"/>
 <circle cx="82.0" cy="219.0" r="5" fill="#d97706"/>
 <text x="82.0" y="209.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">12.95</text>
-<circle cx="515.0" cy="468.0" r="5" fill="#d97706"/>
-<text x="515.0" y="458.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.5</text>
+<circle cx="515.0" cy="468.4" r="5" fill="#d97706"/>
+<text x="515.0" y="458.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.48</text>
 <circle cx="948.0" cy="478.0" r="5" fill="#d97706"/>
 <text x="948.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
 <polyline points="82.0,218.0 515.0,468.4 948.0,478.0" fill="none" stroke="#7c3aed" stroke-width="3"/>

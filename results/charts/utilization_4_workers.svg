@@ -20,21 +20,21 @@
 <text x="226.3" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
 <rect x="122.4" y="286.2" width="46.0" height="187.8" fill="#2563eb" rx="3"/>
 <text x="145.4" y="280.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">94.83%</text>
-<rect x="176.4" y="289.4" width="46.0" height="184.6" fill="#16a34a" rx="3"/>
-<text x="199.4" y="283.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">93.22%</text>
+<rect x="176.4" y="292.5" width="46.0" height="181.5" fill="#16a34a" rx="3"/>
+<text x="199.4" y="286.5" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">91.67%</text>
 <rect x="230.3" y="286.2" width="46.0" height="187.8" fill="#d97706" rx="3"/>
 <text x="253.3" y="280.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">94.83%</text>
-<rect x="284.3" y="292.5" width="46.0" height="181.5" fill="#7c3aed" rx="3"/>
-<text x="307.3" y="286.5" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">91.67%</text>
+<rect x="284.3" y="289.4" width="46.0" height="184.6" fill="#7c3aed" rx="3"/>
+<text x="307.3" y="283.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">93.22%</text>
 <text x="515.0" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
-<rect x="411.1" y="324.4" width="46.0" height="149.6" fill="#2563eb" rx="3"/>
-<text x="434.1" y="318.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">75.54%</text>
-<rect x="465.0" y="330.6" width="46.0" height="143.4" fill="#16a34a" rx="3"/>
-<text x="488.0" y="324.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">72.43%</text>
-<rect x="519.0" y="310.4" width="46.0" height="163.6" fill="#d97706" rx="3"/>
-<text x="542.0" y="304.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">82.62%</text>
-<rect x="573.0" y="318.9" width="46.0" height="155.1" fill="#7c3aed" rx="3"/>
-<text x="595.9" y="312.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">78.33%</text>
+<rect x="411.1" y="279.1" width="46.0" height="194.9" fill="#2563eb" rx="3"/>
+<text x="434.1" y="273.1" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">98.42%</text>
+<rect x="465.0" y="304.2" width="46.0" height="169.8" fill="#16a34a" rx="3"/>
+<text x="488.0" y="298.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">85.74%</text>
+<rect x="519.0" y="298.9" width="46.0" height="175.1" fill="#d97706" rx="3"/>
+<text x="542.0" y="292.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">88.45%</text>
+<rect x="573.0" y="280.5" width="46.0" height="193.5" fill="#7c3aed" rx="3"/>
+<text x="595.9" y="274.5" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">97.73%</text>
 <text x="803.7" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload C</text>
 <rect x="699.7" y="332.7" width="46.0" height="141.3" fill="#2563eb" rx="3"/>
 <text x="722.7" y="326.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">71.35%</text>

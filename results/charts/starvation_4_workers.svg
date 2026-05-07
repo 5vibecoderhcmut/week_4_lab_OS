@@ -29,8 +29,8 @@
 <text x="515.0" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
 <rect x="411.1" y="291.8" width="46.0" height="182.2" fill="#2563eb" rx="3"/>
 <text x="434.1" y="285.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">46</text>
-<rect x="465.0" y="291.8" width="46.0" height="182.2" fill="#16a34a" rx="3"/>
-<text x="488.0" y="285.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">46</text>
+<rect x="465.0" y="347.3" width="46.0" height="126.7" fill="#16a34a" rx="3"/>
+<text x="488.0" y="341.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">32</text>
 <rect x="519.0" y="291.8" width="46.0" height="182.2" fill="#d97706" rx="3"/>
 <text x="542.0" y="285.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">46</text>
 <rect x="573.0" y="291.8" width="46.0" height="182.2" fill="#7c3aed" rx="3"/>
