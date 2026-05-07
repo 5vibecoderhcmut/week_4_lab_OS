@@ -69,7 +69,7 @@ week_4_lab_OS/
 │   │   ├── aging.c
 │   │   ├── fifo.c
 │   │   ├── priority.c
-│   │   └── sif.c
+│   │   └── sjf.c
 │   ├── utils/
 │   │   ├── helpers.c
 │   │   ├── logger.c
@@ -82,12 +82,7 @@ week_4_lab_OS/
     └── workload_c.csv
 ```
 
-Luu y: file `src/policies/sif.c` co ve la typo cua `sjf.c`. Co 2 cach:
-
-- Cach it thay doi cau truc: giu ten `sif.c`, nhung ben trong implement SJF va comment ro.
-- Cach sach hon: rename thanh `sjf.c` va update `Makefile`.
-
-Khuyen nghi: rename `sif.c` thanh `sjf.c` de dung thuat ngu trong PDF. Neu khong muon doi file, van co the dat function la `policy_select_sjf`.
+File SJF duoc dat dung ten `src/policies/sjf.c` de khop voi thuat ngu Shortest Job First trong PDF.
 
 ## 3. Design tong the
 
@@ -781,7 +776,7 @@ int policy_select_fifo(const job_queue_t *queue) {
 }
 ```
 
-### 5.7 `src/policies/sif.c` hoac `src/policies/sjf.c`
+### 5.7 `src/policies/sjf.c`
 
 Trach nhiem:
 
@@ -1027,7 +1022,6 @@ clean:
 .PHONY: all clean
 ```
 
-Neu giu `sif.c`, thay `src/policies/sjf.c` bang `src/policies/sif.c`.
 
 ## 7. Scripts plan
 
@@ -1366,7 +1360,7 @@ Files:
 - `src/core/queue.c`
 - `src/core/scheduler.c`
 - `src/policies/fifo.c`
-- `src/policies/sjf.c` hoac `src/policies/sif.c`
+- `src/policies/sjf.c`
 - `src/policies/priority.c`
 
 Done when:
@@ -1468,7 +1462,7 @@ Evidence trong code:
 Evidence trong code:
 
 - `src/policies/fifo.c`.
-- `src/policies/sjf.c` hoac `sif.c`.
+- `src/policies/sjf.c`.
 - `src/policies/priority.c`.
 - `scheduler_get_next_job` dispatch theo policy.
 

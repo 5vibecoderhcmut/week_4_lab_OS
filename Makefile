@@ -12,7 +12,7 @@ SRC = \
 	src/policies/aging.c \
 	src/policies/fifo.c \
 	src/policies/priority.c \
-	src/policies/sif.c \
+	src/policies/sjf.c \
 	src/utils/helpers.c \
 	src/utils/logger.c \
 	src/utils/parser.c \

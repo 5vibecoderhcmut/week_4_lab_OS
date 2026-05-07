@@ -52,7 +52,7 @@ flowchart LR
     Worker --> Time["src/utils/time_utils.c<br/>Scaled time simulation"]
 
     Scheduler --> FIFO["src/policies/fifo.c"]
-    Scheduler --> SJF["src/policies/sif.c<br/>SJF policy"]
+    Scheduler --> SJF["src/policies/sjf.c<br/>SJF policy"]
     Scheduler --> Priority["src/policies/priority.c"]
     Scheduler --> Aging["src/policies/aging.c<br/>Bonus"]
 

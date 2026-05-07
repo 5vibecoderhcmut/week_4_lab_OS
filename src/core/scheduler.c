@@ -17,7 +17,7 @@ int parse_policy(const char *text, policy_t *out_policy) {
         return 0;
     }
 
-    if (strcasecmp(text, "sjf") == 0 || strcasecmp(text, "sif") == 0) {
+    if (strcasecmp(text, "sjf") == 0) {
         *out_policy = POLICY_SJF;
         return 0;
     }
