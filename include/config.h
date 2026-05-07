@@ -1,0 +1,12 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define MAX_SELLER_ID_LEN 32
+#define MAX_JOB_TYPE_LEN 64
+#define MAX_LINE_LEN 256
+
+#define DEFAULT_TIME_UNIT_MS 100
+#define STARVATION_MULTIPLIER 2.0
+#define AGING_INTERVAL 5
+
+#endif

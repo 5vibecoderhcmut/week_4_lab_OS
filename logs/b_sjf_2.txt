@@ -1,0 +1,52 @@
+[time=0] Worker 0 starts Job 2 seller=D runtime=1 priority=1 type=metadata_update
+[time=0] Worker 1 starts Job 1 seller=A runtime=2 priority=3 type=metadata_update
+[time=1] Worker 0 finishes Job 2
+[time=1] Worker 0 starts Job 3 seller=C runtime=1 priority=2 type=policy_check
+[time=2] Worker 1 finishes Job 1
+[time=2] Worker 1 starts Job 6 seller=B runtime=1 priority=3 type=metadata_update
+[time=2] Worker 0 finishes Job 3
+[time=2] Worker 0 starts Job 4 seller=E runtime=2 priority=3 type=compress
+[time=3] Worker 1 finishes Job 6
+[time=3] Worker 1 starts Job 5 seller=C runtime=2 priority=3 type=policy_check
+[time=4] Worker 0 finishes Job 4
+[time=4] Worker 0 starts Job 12 seller=D runtime=1 priority=2 type=policy_check
+[time=5] Worker 0 finishes Job 12
+[time=5] Worker 0 starts Job 14 seller=B runtime=1 priority=3 type=thumbnail
+[time=5] Worker 1 finishes Job 5
+[time=5] Worker 1 starts Job 16 seller=E runtime=1 priority=1 type=resize
+[time=6] Worker 1 finishes Job 16
+[time=6] Worker 1 starts Job 19 seller=B runtime=1 priority=3 type=policy_check
+[time=6] Worker 0 finishes Job 14
+[time=6] Worker 0 starts Job 20 seller=B runtime=1 priority=2 type=compress
+[time=7] Worker 1 finishes Job 19
+[time=7] Worker 1 starts Job 7 seller=C runtime=2 priority=1 type=resize
+[time=7] Worker 0 finishes Job 20
+[time=7] Worker 0 starts Job 8 seller=A runtime=2 priority=1 type=metadata_update
+[time=9] Worker 1 finishes Job 7
+[time=9] Worker 1 starts Job 9 seller=E runtime=2 priority=1 type=resize
+[time=9] Worker 0 finishes Job 8
+[time=9] Worker 0 starts Job 10 seller=D runtime=2 priority=1 type=resize
+[time=11] Worker 0 finishes Job 10
+[time=11] Worker 0 starts Job 11 seller=B runtime=2 priority=3 type=thumbnail
+[time=11] Worker 1 finishes Job 9
+[time=11] Worker 1 starts Job 13 seller=A runtime=2 priority=2 type=metadata_update
+[time=13] Worker 0 finishes Job 11
+[time=13] Worker 0 starts Job 15 seller=A runtime=2 priority=1 type=compress
+[time=13] Worker 1 finishes Job 13
+[time=13] Worker 1 starts Job 17 seller=B runtime=15 priority=1 type=metadata_update
+[time=15] Worker 0 finishes Job 15
+[time=15] Worker 0 starts Job 18 seller=C runtime=19 priority=3 type=resize
+[time=28] Worker 1 finishes Job 17
+[time=34] Worker 0 finishes Job 18
+
+Policy: SJF
+Workers: 2
+Total jobs: 20
+Total simulation time: 34
+
+Average waiting time: 3.30
+Average turnaround time: 6.40
+Throughput: 0.588 jobs/unit time
+Worker utilization: 91.18%
+Starvation threshold: 6.20
+Starvation-risk jobs: 5
