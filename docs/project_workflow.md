@@ -91,12 +91,12 @@ flowchart TD
 flowchart TD
     A["make"] --> B["Build scheduler binary"]
     B --> C["./scripts/run_all.sh"]
-    C --> D["Run workload A/B/C with FIFO/SJF/Priority and 4 workers"]
+    C --> D["Run workload A/B/C with FIFO/SJF/Priority/Aging and 4 workers"]
     D --> E["Write required logs to logs/*_4.txt"]
     E --> F["Write results/comparison_4_workers.csv"]
 
     B --> G["./scripts/benchmark.sh"]
-    G --> H["Run workload A/B/C with FIFO/SJF/Priority and 2/4/8 workers"]
+    G --> H["Run workload A/B/C with FIFO/SJF/Priority/Aging and 2/4/8 workers"]
     H --> I["Write extended logs to logs/*.txt"]
     I --> J["Write results/summary.csv"]
 

@@ -17,7 +17,7 @@ extract_value() {
 }
 
 for workload in a b c; do
-  for policy in fifo sjf priority; do
+  for policy in fifo sjf priority aging; do
     input="workloads/workload_${workload}.csv"
     output="logs/${workload}_${policy}_4.txt"
     echo "Running workload=${workload} policy=${policy} workers=4"

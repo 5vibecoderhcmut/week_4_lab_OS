@@ -1030,7 +1030,7 @@ clean:
 Muc dich:
 
 - Build.
-- Chay 9 case: A/B/C x FIFO/SJF/Priority voi 4 workers.
+- Chay 12 case: A/B/C x FIFO/SJF/Priority/Aging voi 4 workers.
 - Ghi log vao `logs/`.
 
 Cases:
@@ -1058,7 +1058,7 @@ Cases:
 
 ```text
 for workload in a b c
-for policy in fifo sjf priority
+for policy in fifo sjf priority aging
 for workers in 2 4 8
 ```
 
@@ -1365,7 +1365,7 @@ Files:
 
 Done when:
 
-- Unit/manual test selector cho FIFO/SJF/Priority dung.
+- Unit/manual test selector cho FIFO/SJF/Priority/Aging dung.
 - `parse_policy` ho tro `fifo`, `sjf`, `priority`.
 
 ### Milestone 4 - Worker pool and dispatcher

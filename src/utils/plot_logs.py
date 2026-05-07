@@ -377,7 +377,7 @@ def main() -> int:
     comparison_rows = [
         row
         for row in rows
-        if row.workers == args.workers and row.policy in {"fifo", "sjf", "priority"}
+        if row.workers == args.workers and row.policy in set(POLICY_ORDER)
     ]
     if not comparison_rows:
         raise SystemExit(f"No logs found for workers={args.workers}")

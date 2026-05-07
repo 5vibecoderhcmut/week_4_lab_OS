@@ -45,10 +45,19 @@
 <text x="515.0" y="408.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7.45</text>
 <circle cx="948.0" cy="466.0" r="5" fill="#d97706"/>
 <text x="948.0" y="456.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.5</text>
+<polyline points="82.0,306.4 515.0,418.0 948.0,466.0" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="82.0" cy="306.4" r="5" fill="#7c3aed"/>
+<text x="82.0" y="296.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">21.45</text>
+<circle cx="515.0" cy="418.0" r="5" fill="#7c3aed"/>
+<text x="515.0" y="408.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7.5</text>
+<circle cx="948.0" cy="466.0" r="5" fill="#7c3aed"/>
+<text x="948.0" y="456.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.5</text>
 <rect x="82" y="502" width="12" height="12" fill="#2563eb" rx="2"/>
 <text x="100.0" y="512.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">FIFO</text>
 <rect x="178" y="502" width="12" height="12" fill="#16a34a" rx="2"/>
 <text x="196.0" y="512.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">SJF</text>
 <rect x="274" y="502" width="12" height="12" fill="#d97706" rx="2"/>
 <text x="292.0" y="512.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Priority</text>
+<rect x="370" y="502" width="12" height="12" fill="#7c3aed" rx="2"/>
+<text x="388.0" y="512.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Aging</text>
 </svg>

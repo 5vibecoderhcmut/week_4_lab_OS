@@ -17,7 +17,7 @@ extract_value() {
 }
 
 for workload in a b c; do
-  for policy in fifo sjf priority; do
+  for policy in fifo sjf priority aging; do
     for workers in 2 4 8; do
       input="workloads/workload_${workload}.csv"
       output="logs/${workload}_${policy}_${workers}.txt"

@@ -18,30 +18,38 @@
 <line x1="82" y1="474" x2="948" y2="474" stroke="#374151"/>
 <text x="24.0" y="276.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Jobs</text>
 <text x="226.3" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
-<rect x="122.4" y="196.8" width="63.9" height="277.2" fill="#2563eb" rx="3"/>
-<text x="154.4" y="190.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7</text>
-<rect x="194.4" y="276.0" width="63.9" height="198.0" fill="#16a34a" rx="3"/>
-<text x="226.3" y="270.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">5</text>
-<rect x="266.3" y="196.8" width="63.9" height="277.2" fill="#d97706" rx="3"/>
-<text x="298.3" y="190.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7</text>
+<rect x="122.4" y="196.8" width="46.0" height="277.2" fill="#2563eb" rx="3"/>
+<text x="145.4" y="190.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7</text>
+<rect x="176.4" y="276.0" width="46.0" height="198.0" fill="#16a34a" rx="3"/>
+<text x="199.4" y="270.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">5</text>
+<rect x="230.3" y="196.8" width="46.0" height="277.2" fill="#d97706" rx="3"/>
+<text x="253.3" y="190.8" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">7</text>
+<rect x="284.3" y="236.4" width="46.0" height="237.6" fill="#7c3aed" rx="3"/>
+<text x="307.3" y="230.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">6</text>
 <text x="515.0" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
-<rect x="411.1" y="474.0" width="63.9" height="0.0" fill="#2563eb" rx="3"/>
-<text x="443.1" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<rect x="483.0" y="474.0" width="63.9" height="0.0" fill="#16a34a" rx="3"/>
-<text x="515.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<rect x="555.0" y="474.0" width="63.9" height="0.0" fill="#d97706" rx="3"/>
-<text x="586.9" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="411.1" y="474.0" width="46.0" height="0.0" fill="#2563eb" rx="3"/>
+<text x="434.1" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="465.0" y="474.0" width="46.0" height="0.0" fill="#16a34a" rx="3"/>
+<text x="488.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="519.0" y="474.0" width="46.0" height="0.0" fill="#d97706" rx="3"/>
+<text x="542.0" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="573.0" y="474.0" width="46.0" height="0.0" fill="#7c3aed" rx="3"/>
+<text x="595.9" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
 <text x="803.7" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload C</text>
-<rect x="699.7" y="474.0" width="63.9" height="0.0" fill="#2563eb" rx="3"/>
-<text x="731.7" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<rect x="771.7" y="474.0" width="63.9" height="0.0" fill="#16a34a" rx="3"/>
-<text x="803.7" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
-<rect x="843.6" y="434.4" width="63.9" height="39.6" fill="#d97706" rx="3"/>
-<text x="875.6" y="428.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1</text>
+<rect x="699.7" y="474.0" width="46.0" height="0.0" fill="#2563eb" rx="3"/>
+<text x="722.7" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="753.7" y="474.0" width="46.0" height="0.0" fill="#16a34a" rx="3"/>
+<text x="776.7" y="468.0" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0</text>
+<rect x="807.7" y="434.4" width="46.0" height="39.6" fill="#d97706" rx="3"/>
+<text x="830.6" y="428.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1</text>
+<rect x="861.6" y="434.4" width="46.0" height="39.6" fill="#7c3aed" rx="3"/>
+<text x="884.6" y="428.4" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1</text>
 <rect x="82" y="532" width="12" height="12" fill="#2563eb" rx="2"/>
 <text x="100.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">FIFO</text>
 <rect x="178" y="532" width="12" height="12" fill="#16a34a" rx="2"/>
 <text x="196.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">SJF</text>
 <rect x="274" y="532" width="12" height="12" fill="#d97706" rx="2"/>
 <text x="292.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Priority</text>
+<rect x="370" y="532" width="12" height="12" fill="#7c3aed" rx="2"/>
+<text x="388.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">Aging</text>
 </svg>

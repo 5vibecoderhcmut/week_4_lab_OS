@@ -55,13 +55,13 @@ For example, a job with `estimated_runtime=5` sleeps for about 0.5 seconds.
 
 ## Scripts
 
-Run the required 9 experiments:
+Run the policy comparison experiments, including the Aging bonus policy:
 
 ```bash
 ./scripts/run_all.sh
 ```
 
-Run 2/4/8 worker comparisons:
+Run 2/4/8 worker comparisons, including the Aging bonus policy:
 
 ```bash
 ./scripts/benchmark.sh
