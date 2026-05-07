@@ -18,8 +18,8 @@
 <line x1="82" y1="474" x2="948" y2="474" stroke="#374151"/>
 <text x="24.0" y="276.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Percent</text>
 <text x="226.3" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
-<rect x="122.4" y="299.2" width="46.0" height="174.8" fill="#2563eb" rx="3"/>
-<text x="145.4" y="293.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">88.28%</text>
+<rect x="122.4" y="283.2" width="46.0" height="190.8" fill="#2563eb" rx="3"/>
+<text x="145.4" y="277.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">96.35%</text>
 <rect x="176.4" y="299.2" width="46.0" height="174.8" fill="#16a34a" rx="3"/>
 <text x="199.4" y="293.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">88.28%</text>
 <rect x="230.3" y="293.6" width="46.0" height="180.4" fill="#d97706" rx="3"/>
