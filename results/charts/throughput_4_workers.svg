@@ -18,32 +18,32 @@
 <line x1="82" y1="474" x2="948" y2="474" stroke="#374151"/>
 <text x="24.0" y="276.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#111827">Jobs / time unit</text>
 <text x="226.3" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload A</text>
-<rect x="122.4" y="303.3" width="46.0" height="170.7" fill="#2563eb" rx="3"/>
-<text x="145.4" y="297.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.862</text>
-<rect x="176.4" y="306.3" width="46.0" height="167.7" fill="#16a34a" rx="3"/>
-<text x="199.4" y="300.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.847</text>
-<rect x="230.3" y="303.3" width="46.0" height="170.7" fill="#d97706" rx="3"/>
-<text x="253.3" y="297.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.862</text>
-<rect x="284.3" y="309.1" width="46.0" height="164.9" fill="#7c3aed" rx="3"/>
-<text x="307.3" y="303.1" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.833</text>
+<rect x="122.4" y="339.6" width="46.0" height="134.4" fill="#2563eb" rx="3"/>
+<text x="145.4" y="333.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.679</text>
+<rect x="176.4" y="339.6" width="46.0" height="134.4" fill="#16a34a" rx="3"/>
+<text x="199.4" y="333.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.679</text>
+<rect x="230.3" y="334.6" width="46.0" height="139.4" fill="#d97706" rx="3"/>
+<text x="253.3" y="328.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.704</text>
+<rect x="284.3" y="329.3" width="46.0" height="144.7" fill="#7c3aed" rx="3"/>
+<text x="307.3" y="323.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.731</text>
 <text x="515.0" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload B</text>
-<rect x="411.1" y="403.3" width="46.0" height="70.7" fill="#2563eb" rx="3"/>
-<text x="434.1" y="397.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.357</text>
-<rect x="465.0" y="406.3" width="46.0" height="67.7" fill="#16a34a" rx="3"/>
-<text x="488.0" y="400.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.342</text>
-<rect x="519.0" y="396.6" width="46.0" height="77.4" fill="#d97706" rx="3"/>
-<text x="542.0" y="390.6" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.391</text>
-<rect x="573.0" y="400.7" width="46.0" height="73.3" fill="#7c3aed" rx="3"/>
-<text x="595.9" y="394.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.37</text>
+<rect x="411.1" y="285.9" width="46.0" height="188.1" fill="#2563eb" rx="3"/>
+<text x="434.1" y="279.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.95</text>
+<rect x="465.0" y="329.3" width="46.0" height="144.7" fill="#16a34a" rx="3"/>
+<text x="488.0" y="323.3" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.731</text>
+<rect x="519.0" y="285.9" width="46.0" height="188.1" fill="#d97706" rx="3"/>
+<text x="542.0" y="279.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.95</text>
+<rect x="573.0" y="285.9" width="46.0" height="188.1" fill="#7c3aed" rx="3"/>
+<text x="595.9" y="279.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.95</text>
 <text x="803.7" y="522.0" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#111827">Workload C</text>
-<rect x="699.7" y="267.7" width="46.0" height="206.3" fill="#2563eb" rx="3"/>
-<text x="722.7" y="261.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.042</text>
-<rect x="753.7" y="267.7" width="46.0" height="206.3" fill="#16a34a" rx="3"/>
-<text x="776.7" y="261.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.042</text>
-<rect x="807.7" y="267.7" width="46.0" height="206.3" fill="#d97706" rx="3"/>
-<text x="830.6" y="261.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.042</text>
-<rect x="861.6" y="267.7" width="46.0" height="206.3" fill="#7c3aed" rx="3"/>
-<text x="884.6" y="261.7" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">1.042</text>
+<rect x="699.7" y="302.9" width="46.0" height="171.1" fill="#2563eb" rx="3"/>
+<text x="722.7" y="296.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.864</text>
+<rect x="753.7" y="317.2" width="46.0" height="156.8" fill="#16a34a" rx="3"/>
+<text x="776.7" y="311.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.792</text>
+<rect x="807.7" y="317.2" width="46.0" height="156.8" fill="#d97706" rx="3"/>
+<text x="830.6" y="311.2" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.792</text>
+<rect x="861.6" y="302.9" width="46.0" height="171.1" fill="#7c3aed" rx="3"/>
+<text x="884.6" y="296.9" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#111827">0.864</text>
 <rect x="82" y="532" width="12" height="12" fill="#2563eb" rx="2"/>
 <text x="100.0" y="542.0" font-family="Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#111827">FIFO</text>
 <rect x="178" y="532" width="12" height="12" fill="#16a34a" rx="2"/>

@@ -1,5 +1,4 @@
-ob_id,seller_id,arrival_time,estimated_runtime,priority,job_type
-1,A,0,15,2,compress
+job_id,seller_id,arrival_time,estimated_runtime,priority,job_type
 2,B,0,15,2,compress
 3,C,0,15,2,compress
 4,D,0,15,2,compress
